@@ -13,8 +13,87 @@ $small-breakpoint: 500px;
 $medium-breakpoint: 960px;
 
 .app {
+  width: $site-width;
+  margin: auto;
+
   * {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
+  }
+
+  header {
+    background-color: $primary-light;
+    color: $gray;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+    height: 125px;
+  }
+
+  .main-title{
+    display: flex;
+    flex-direction: column;
+
+    h1{
+      margin-bottom: 0;
+    }
+    
+    p{
+      font-style: italic;
+    }
+  }
+
+  .hero-image{
+    width: $site-width;
+  }
+
+  .nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    li{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin: 10px;
+      width: 65px;
+      height: 25px;
+    }
+
+    .about{
+      background-color: $primary;
+      color:$primary-light;
+      border-radius: 2px;
+    }
+  }
+
+  .post{
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+    padding: $gutter 100px $gutter 100px 
+  }
+
+  .profile-image{
+    width: $profile-image-width;
+    border-radius: 100%;
+  }
+
+  .content{
+    margin: 0px 50px 0px 50px;
+  }
+
+  footer{
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    
+    font-size: $gutter;
+    background-color: $primary;
+    color: $primary-light;
   }
 }
